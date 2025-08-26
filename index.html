@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíblia PWA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#004d40">
+</head>
+<body>
+
+    <header>
+        <h1>Bíblia</h1>
+    </header>
+
+    <main>
+        <section id="configuracoes">
+            <label for="seletor-versao">Versão:</label>
+            <select id="seletor-versao">
+                <option value="aa">Almeida Atualizada</option>
+                <option value="acf">Almeida Corrigida e Fiel</option>
+                <option value="nvi">Nova Versão Internacional</option>
+            </select>
+        </section>
+
+        <section id="menu-livros">
+            </section>
+
+        <section id="menu-capitulos" class="oculto">
+            <h2 id="titulo-livro"></h2>
+            <div id="lista-capitulos"></div>
+            <button id="voltar-livros" class="btn-voltar">Voltar</button>
+        </section>
+
+        <section id="conteudo-biblia" class="oculto">
+            <h2 id="titulo-livro-capitulo"></h2>
+            <div id="texto-versiculos"></div>
+            <button id="voltar-capitulos" class="btn-voltar">Voltar</button>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
